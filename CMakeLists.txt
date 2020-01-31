@@ -7,8 +7,8 @@ if(POLICY CMP0054)
 endif()
 
 # ---[ Caffe project
-project(Caffe C CXX)
 set(CMAKE_CXX_COMPILER "/usr/bin/g++")
+project(Caffe C CXX)
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
